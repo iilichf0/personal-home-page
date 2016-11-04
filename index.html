@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="style/style.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.5.min.js"></script>
+	<script type="text/javascript" src="js/settings.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+
+<!-- Page Title -->
+	<title>Anael</title>
+
+<style type="text/css">
+body {
+    background: url(images/bg-noise.png) repeat;
+}
+</style>
+</head>
+<body>
+<abruzzi>
+
+
+Social
+http://www.facebook.com || Facebook
+https://mail.google.com/mail/#inbox || Gmail
+https://www.youtube.es || Youtube
+
+Noticias
+http://www.meristation.com || Meristation
+http://es.engadget.com/ || Engadget
+http://www.xataka.com/ || Xataka
+http://www.elmundo.es/ || El Mundo 
+http://www.htcmania.com/portal.php || HTCmanía
+
+Compras
+http://www.ebay.es/ || eBay
+http://www.vibbo.com/ || Vibbo
+http://www.milanuncios.com/ || Milanuncios
+http://es.wallapop.com/ || Wallapop
+https://www.paypal.com/es/ || PayPal
+https://www.caixabank.es/particular/home/particulares_es.html || CaixaBank
+
+Diseño
+http://www.deviantart.com/ || DevianArt
+http://www.nexusmods.com/games/? || NexusMods
+https://www.reddit.com/r/unixporn/ || Unixporn
+https://github.com/ || GitHub
+https://www.archlinux.org/ || ArchLinux
+
+Descargas
+http://www.gamestorrents.com/ || GamesTorrents
+http://www.zonaleros.net/ || Zonaleros
+http://www.intercambiosvirtuales.org/ || Intercambios Virtuales
+
+Misc
+http://www.apple.es || Apple
+http://www.filmaffinity.com/es/main.html || Filmaffinity
+https://www.dropbox.com/home# || Dropbox
+https://www.spotify.com/es/ || Spotify
+http://www.pordede.com/ || Pordede
+http://192.168.8.110:5000 || Nas
+http://192.168.8.110:8083 || Nas - Sickrage
+http://192.168.8.110:8182 || Nas - Headhones
+http://192.168.8.110:9091 || Nas - Transmission
+
+
+
+
+
+</abruzzi>
+
+
+
+
+
+<div id="date">
+<script type="text/javascript">
+
+function makeArray() {
+for (i = 0; i<makeArray.arguments.length; i++)
+this[i + 1] = makeArray.arguments[i];
+}
+
+var months = new makeArray('Enero','Febrero','Marzo','Abril','Mayo',
+'Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre');
+var date = new Date();
+var day = date.getDate();
+var month = date.getMonth() + 1;
+var yy = date.getYear();
+var year = (yy < 1000) ? yy + 1900 : yy;
+
+document.write(day + " " + months[month] + " " + year);
+
+</script>
+</div>
+
+<script type="text/javascript">
+    
+    $(window).load(function() {
+        $('#slider').nivoSlider({ borderRadius: 5 });
+    });   
+</script>
+<script type="text/javascript">
+$('body').hide();
+$('body').fadeIn(2000);
+</script>
+
+
+<script type="text/javascript">
+	if(showDate) {
+		// Add empty '#clock' div
+		$('body').append('<div id="date"></div>');
+
+	  // Update clock
+   	setInterval('makeArray()',);
+	}
+</script>
+
+</body>
+</html>
